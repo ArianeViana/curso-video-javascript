@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+</head>
+<body>
+    <script>
+        var n1 = window.prompt("Digite um número")
+        var n2 = window.prompt("Digite outro número")
+       
+        //o prompt retorna o valor como string, então temos que converter para número se quisermos fazer alguma operação
+
+        //Conversão string para número
+        //Number.parseInt(x)
+        //Number.parseFloat(x)
+        
+        soma = Number.parseFloat(n1) + Number.parseFloat(n2)
+
+        //pode utilizar somente Number(x), desse jeito o próprio JS decide se o número é real ou inteiro
+
+        //Converter número para string
+        //String(x)
+        //x.toString()
+        
+        //formatando strings (template strings)
+        //`${x}`
+        window.alert(`A soma de ${n1} e ${n2} é ${soma}`)
+
+    </script>
+</body>
+</html>

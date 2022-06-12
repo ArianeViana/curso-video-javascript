@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- Document Object Model -- conjunto de objetos dentro do navegador que dá acesso aos componentes internos do website -->
+    <!-- com o DOM o JS pode acessar e modificar todos os elementos do HTML -->
+    <!-- https://bityli.com/EbLzNz  -- w3schools 
+        https://bityli.com/bNsOcF -- mozilla 
+        https://bityli.com/IjWGIh -- devMedia -->
+
+    <h1 name="titulo">Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <h3 id="teste">Só pra testar</h3>
+    <br/>
+    <h2 class="sub-titulo">Acesso e modificações com o DOM</h2>
+
+    <script>
+        // seleção por marca(tag html)
+        //(tag)[posição tag]
+        var p1 = document.getElementsByTagName("p")[0]
+        document.write(p1.innerText)
+        //innerText traz o texto sem formatação
+        //innerHTML traz o texto com formatação
+
+        //por ID 
+        var d = document.getElementById("msg")
+        d.style.backgroundColor = "green"
+
+        //por nome
+        var t = document.getElementsByName("titulo")[0]
+        t.style.color = "red"
+
+        //por classe
+        var st = document.getElementsByClassName("sub-titulo")[0]
+        st.style.color = "orange"
+
+        //por seletor
+        var teste = document.querySelector("h3#teste") // se fosse uma classe seria h3.teste
+        teste.style.backgroundColor = "pink"
+
+
+
+    </script>
+</body>
+</html>

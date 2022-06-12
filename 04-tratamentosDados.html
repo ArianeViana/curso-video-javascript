@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Dados</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>        
+        //x.length - mostra quantos caracteres a string tem
+        //x.toUpperCase() - coloca tudo para letras maiúsculas
+        //x.toLowerCase() - coloca tudo para letras minúsculas
+
+        var nome = window.prompt("Qual é o seu nome?")
+        document.write(`Olá ${nome} <br/>`)
+        document.write(`Seu nome tem ${nome.length} letras <br/>`)  
+        document.write("Seu nome em minúscula é " + nome.toUpperCase())   
+        
+        //formatar números
+        //x.toFixed(c), onde c = quantas casas decimais você quer
+        //x.toFixed(c).replace('.', ',') troca ponto por vírgula
+        //X.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) transforma para R$  
+        // USD trará em $ , EUR em €
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        #resultado{
+        margin-top: 15px;
+        font-size: 15pt;
+        }
+
+        strong{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">Km/h
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="resultado"></div>
+
+    <script>
+        function enviar(){
+            var txtvel = document.getElementById("txtvel")
+            var velocidade = Number(txtvel.value)
+            if(velocidade > 70){
+                resultado.innerHTML = "Você ultrapassou o limite de velocidade. <strong>Multado!</strong>"
+            }else{
+                resultado.innerHTML = "Você estava dentro do limite de velocidade. Não há multas."
+            }
+
+            resultado.innerHTML += "<br/>Dirija com cuidado!"
+        }
+
+    </script>
+</body>
+</html>
