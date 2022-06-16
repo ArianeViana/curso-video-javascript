@@ -22,3 +22,8 @@ footer{
     color: white;
     font-style: italic;
 }
+
+div{
+    text-align: center;
+    margin-top: 10px;
+}

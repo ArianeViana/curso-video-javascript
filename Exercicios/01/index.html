@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do Dia</title>
-    <link rel="stylesheet" href="01-estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="carregar()">
    
     <header>
         <h1>HORA DO DIA</h1>
     </header>  
 
     <section>
-        <div>teste</div>
-
-        <div>teste</div>
+        <div id="msg-hora">aqui vai aparecer a hora</div>
+        <div id="foto">
+           <img id="imagem">
+        </div>
+        <div id="msg">aqui vai aparecer a mensagem</div>
     </section>
 
 
     <footer>
         <p>&copy;CursoEmVideo</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
